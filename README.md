@@ -87,26 +87,47 @@ was being skipped entirely.
 # Overall Reflection
 
 ## Which task was the easiest to fix? Why?
--
+-Task 1 (getGrade) was the easiest. The bug was visible just by reading the
+code — the return values were swapped and the boundaries used `>` instead
+of `>=`. Once I ran the test and saw the expected values, the fix was
+obvious.
 
 ## Which task was the most difficult? Why?
--
+-Task 3 (sumRange) was the hardest. The loop looked correct at first glance
+because it works fine for normal ranges where start < end. The bug only
+appeared when start > end, which I wouldn't have thought to test on my own.
+The test class had a "reverse order" test that caught it.
 
 ## How did Git help you track your progress through the debugging process?
--
+-Each fix was its own commit with a clear message, so I could look back at
+the history and see exactly what changed for each task. If I broke
+something, I could compare against the previous commit to find the
+difference.
 
 ## Why is it important to make small, frequent commits when debugging code?
--
+-Small commits isolate one change at a time. If a commit introduces a bug,
+it's easy to see exactly what caused it and revert just that change. If
+everything is lumped into one commit, you can't tell which change broke
+what.
 
 ## What did you learn about using JUnit tests to guide debugging?
--
+-The tests define the expected behavior, including boundary cases I might
+not think to check. The failure messages show expected vs. actual values,
+which points directly at the bug instead of forcing me to guess. Running
+tests after each fix confirms the change actually worked.
 
 ---
 
 # Commit 5: Final Reflection
 
 ## What did you complete or update before making this final commit?
--
+-I finished the Overall Reflection section, verified that all three task
+reflections were complete, and confirmed my name and the GitHub repository
+URL were in the README.
 
 ## Why is it useful to document your work after completing a programming task?
--
+-Documentation explains the 'why' a change was made, not just what changed.
+A commit message says "fixed the loop," but the reflection explains
+what was wrong, how it was found, and what was learned — which is useful
+for the person reading the code later, and for reinforcing my own
+understanding.
