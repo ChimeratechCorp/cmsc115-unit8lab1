@@ -20,16 +20,18 @@ https://github.com/ChimeratechCorp/cmsc115-unit8lab1.git
 # Commit 2: Task 1 (getGrade)
 
 ## Which tests in Task1Test were failing before your fix?
--
+testEdges()
+testGrades()
 
 ## What was the issue in the code?
--
+-Ran Task1Test. Showed 2 test failed testEdges() and testGrades()
+The expected and actual results were shown.
 
 ## What change did you make to fix it?
--
+-Changed the nested if-else to check >= 90 "Exceeds", then >= 80 "Meets", else "Does Not Meet".
 
 ## How did the tests help guide your fix?
--
+-I was given the expected results and I changed to code to reflect that goal. 
 
 ---
 
