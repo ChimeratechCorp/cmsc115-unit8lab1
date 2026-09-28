@@ -1,20 +1,19 @@
 # Lab Reflection: Unit 8 Lab 1 - Git Version Control + Debugging (BuggyProgram)
 
 ## Student Name
-Enter your name here.
+Robert Cruz
 
 ## GitHub Repository URL
-Paste your GitHub repository URL here.
-
+https://github.com/ChimeratechCorp/cmsc115-unit8lab1.git
 ---
 
 # Commit 1: Initial Commit
 
 ## What did you include in this commit?
--
+-BuggyProgram starter with JUnit tests
 
 ## What was the purpose of this commit?
--
+-This commit represents the baseline version of your project.
 
 ---
 
