@@ -10,28 +10,34 @@ https://github.com/ChimeratechCorp/cmsc115-unit8lab1.git
 # Commit 1: Initial Commit
 
 ## What did you include in this commit?
--BuggyProgram starter with JUnit tests
+-
+BuggyProgram starter with JUnit tests
 
 ## What was the purpose of this commit?
--This commit represents the baseline version of your project.
+-
+This commit represents the baseline version of your project.
 
 ---
 
 # Commit 2: Task 1 (getGrade)
 
 ## Which tests in Task1Test were failing before your fix?
+-
 testEdges()
 testGrades()
 
 ## What was the issue in the code?
--Ran Task1Test. Showed 2 test failed testEdges() and testGrades()
+-
+Ran Task1Test. Showed 2 test failed testEdges() and testGrades()
 The expected and actual results were shown.
 
 ## What change did you make to fix it?
--Changed the nested if-else to check >= 90 "Exceeds", then >= 80 "Meets", else "Does Not Meet".
+-
+Changed the nested if-else to check >= 90 "Exceeds", then >= 80 "Meets", else "Does Not Meet".
 
 ## How did the tests help guide your fix?
--I was given the expected results and I changed to code to reflect that goal. 
+-
+I was given the expected results and I changed to code to reflect that goal. 
 
 ---
 
@@ -39,15 +45,30 @@ The expected and actual results were shown.
 
 ## Which tests in Task2Test were failing before your fix?
 -
+testEmpty()
+testOddNumbers()
+testSumEvenNumbers()
+
 
 ## What was the issue in the code?
 -
+sum was initialized to 1 instead of 0, so every
+result was off by one.
+the loop condition was <= instead of < operator, 
+which caused an ArrayIndexOutOfBoundsException
+because index values.length is past the end of the array.
 
 ## What change did you make to fix it?
 -
+Initialize sum to 0 instead of 1
+Changed the operator in the loop condition from <= to <
 
 ## How did the tests help guide your fix?
 -
+Logic error of the initialized of sum, since the code still ran, 
+but was easy to visual because everything was off my 1. 
+The TheArrayIndexOutOfBoundsException error message was clear indication 
+at the loop going one index too far.
 
 ---
 
