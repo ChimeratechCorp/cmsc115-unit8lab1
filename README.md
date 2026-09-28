@@ -127,7 +127,6 @@ URL were in the README.
 
 ## Why is it useful to document your work after completing a programming task?
 -Documentation explains the 'why' a change was made, not just what changed.
-A commit message says "fixed the loop," but the reflection explains
-what was wrong, how it was found, and what was learned — which is useful
-for the person reading the code later, and for reinforcing my own
-understanding.
+A commit message says "fixed the loop." I made a mistake and didn't change the commit messages.
+I thought I was updating them. But it kept the initial commit message. Now going back to review my commits,
+I have to search harder to find exactly what I'm looking for. It would have been a lot easier, if they were named properly.
